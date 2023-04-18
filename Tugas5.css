@@ -1,0 +1,140 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+	padding: 10px 30px;
+	color: white;
+    border-color: white;
+}
+.btn:hover{
+    background-color: darkred;
+    border-color: darkred;
+}
+#header {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+    top: 0;
+}
+#header .container .navbar {
+    top: 0;
+	width: 100%;
+	padding: 10px;
+}
+.navbar-brand{
+    margin-top: 90px;
+}
+.nav-list .atas{
+    height: 50px;
+	display: inline-flex;
+    margin-top: 12%;
+}
+.atas{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.atas li{
+    padding-left: 40px;
+    color: white;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: darkred;
+}
+#content1 {
+	background-image: url(background1.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+    height: 600px;
+}
+#content1 .container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 50px;
+    padding-top: 200px;
+    position: absolute;
+    color: white;
+}
+#content1 h2 {
+	display: block;
+	width: fit-content;
+	position: relative;
+}
+.header2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.header2 p{
+    color: white;
+    background-color: rgba(255, 42, 42, 0.8);
+    border-radius: 20px;
+    width: 120px;
+    margin-left: 30px;
+}
+.row{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#content3{
+    background-color: brown;
+    padding-top: 70px;
+}
+#content3 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+@media \0screen {
+    img{
+        width: auto;
+    }
+}
+.header3{
+    text-align: left;
+    color: white;
+}
+.header3 p{
+    color: white;
+    background-color: rgba(255, 42, 42, 0.8);
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+}
+@media screen and (max-width: 1330px) {
+    .nav-list .atas{
+        display: none;
+    }
+    #content1 .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 50px;
+        padding-top: 350px;
+        position: absolute;
+        color: white;
+    }
+    .card-body p{
+        display: none;
+    }
+}
